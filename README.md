@@ -6,6 +6,11 @@
 
 *Iliana Kogia (10090)*
 
+---
+
+Section 1
+
+---
 
 1) MinorCPU Cache
 
@@ -113,7 +118,11 @@ DDR3\_2133\_x64
 
 Less simulation seconds (faster memory access-\> better performance) , so we get a better cpi.
 
+---
+
 Section 2
+
+---
 
 1)
 
@@ -224,7 +233,9 @@ Sets:
 
 **{1, 2, 3}**
 
-![](RackMultipart20221214-1-83hik4_html_50048088a3c09ac2.jpg) ![](RackMultipart20221214-1-83hik4_html_dd9bd5c6dcd4ad31.jpg) ![](RackMultipart20221214-1-83hik4_html_11e577a25cf955c7.jpg) ![](RackMultipart20221214-1-83hik4_html_680b6188863f35fa.jpg) ![](RackMultipart20221214-1-83hik4_html_3b74dd4aed5510e8.jpg)
+<img src="./images/Picture6.jpg" width="450"> <img src="./images/Picture7.jpg" width="450">
+<img src="./images/Picture8.jpg" width="450"> <img src="./images/Picture9.jpg" width="450">
+<img src="./images/Picture10.jpg" width="450">
 
 We observe that for the L1 sizes of the set no.1 we get the optimum CPI for all benchmarks except specmcf (for mcf the best is set no.2).
 
@@ -232,7 +243,9 @@ L1_D=32kB, L1_I=32kB
 
 **{1, 4, 5, 6}**
 
-![](RackMultipart20221214-1-83hik4_html_c46d478356da3184.jpg) ![](RackMultipart20221214-1-83hik4_html_e02190a0331bc2b9.jpg) ![](RackMultipart20221214-1-83hik4_html_b02633f4c11ee3db.jpg) ![](RackMultipart20221214-1-83hik4_html_81e1bb458d1ec84d.jpg) ![](RackMultipart20221214-1-83hik4_html_f2687db797d5286.jpg)
+<img src="./images/Picture11.jpg" width="450"> <img src="./images/Picture12.jpg" width="450">
+<img src="./images/Picture13.jpg" width="450"> <img src="./images/Picture14.jpg" width="450">
+<img src="./images/Picture15.jpg" width="450">
 
 We observe that for the L2 sizes of the set no.5 we get the optimum CPI for all benchmarks except specmcf.
 
@@ -240,7 +253,9 @@ L2=2MB.
 
 **{7, 8, 9}**
 
-![](RackMultipart20221214-1-83hik4_html_ad1da6880784d135.jpg) ![](RackMultipart20221214-1-83hik4_html_71974c63fcead596.jpg) ![](RackMultipart20221214-1-83hik4_html_540db393919f4636.jpg) ![](RackMultipart20221214-1-83hik4_html_27d2e505838c9eee.jpg) ![](RackMultipart20221214-1-83hik4_html_935d464a091efbde.jpg)
+<img src="./images/Picture16.jpg" width="450"> <img src="./images/Picture17.jpg" width="450">
+<img src="./images/Picture18.jpg" width="450"> <img src="./images/Picture19.jpg" width="450">
+<img src="./images/Picture20.jpg" width="450">
 
 We observe that for the L1_Ass and L2_Ass of the set no.8 we get the optimum CPI for all benchmarks.
 
@@ -252,7 +267,9 @@ L2_Ass=4
 
 **{1, 10}**
 
-![](RackMultipart20221214-1-83hik4_html_b4c3b7b82cb6c326.jpg) ![](RackMultipart20221214-1-83hik4_html_d65ab3eb785aa67e.jpg) ![](RackMultipart20221214-1-83hik4_html_80666aa07cc2369f.jpg) ![](RackMultipart20221214-1-83hik4_html_bcf2ce046cf6cc26.jpg) ![](RackMultipart20221214-1-83hik4_html_b4e4414d9b4ba4f2.jpg)
+<img src="./images/Picture21.jpg" width="450"> <img src="./images/Picture22.jpg" width="450">
+<img src="./images/Picture23.jpg" width="450"> <img src="./images/Picture24.jpg" width="450">
+<img src="./images/Picture25.jpg" width="450">
 
 We observe that for the Cache line sizes of the set no.10 we get the optimum CPI for all benchmarks except specmcf.
 
@@ -286,7 +303,11 @@ Cache\_line\_size = 128
 
 We get the best performance from all the other simulations for each benchmark.
 
+---
+
 Section 3
+
+---
 
 c1 = cost unit.
 
