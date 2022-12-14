@@ -52,11 +52,11 @@ https://www.spec.org/cpu2006/Docs/
 | 4.specmcf | 0.119056 | 1.190561 | 0.008329 | 0.000018 | 0.174927 |
 | 5. specsjeng | 0.704128 | 7.041281 | 0.121835 | 0.000019 | 0.999917 |
 
-<img src="./images/Picture1.jpg" width="400" height="350"> <img src="./images/Picture2.jpg" width="400" height="350">
+<img src="./images/Picture1.jpg" width="400" height="330"> <img src="./images/Picture2.jpg" width="400" height="330">
 
-<img src="./images/Picture3.jpg" width="400" height="350"> <img src="./images/Picture4.jpg" width="400" height="350">
+<img src="./images/Picture3.jpg" width="400" height="330"> <img src="./images/Picture4.jpg" width="400" height="330">
 
-<img src="./images/Picture5.jpg" width="400" height="350">
+<img src="./images/Picture5.jpg" width="400" height="330">
 
 Benchmark no.5 (specsjeng) takes the most time to complete with 0.7 seconds simulated and has the biggest L1 Data cache miss rate.
 
