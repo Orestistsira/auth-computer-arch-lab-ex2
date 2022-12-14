@@ -1,6 +1,11 @@
 # auth-computer-arch-lab-ex2
 
-Αρχιτεκτονική εργαστηριο 2
+**Lab 2**
+
+*Tsirakis Orestis (9995)*
+
+*Iliana Kogia (10090)*
+
 
 1)
 
