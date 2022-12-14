@@ -49,9 +49,9 @@ https://www.spec.org/cpu2006/Docs/
 
 <img src="./images/Picture1.jpg" width="450"> <img src="./images/Picture2.jpg" width="450">
 
-<img src="./images/Picture3.jpg" width="350"> <img src="./images/Picture4.jpg" width="350">
+<img src="./images/Picture3.jpg" width="450"> <img src="./images/Picture4.jpg" width="450">
 
-<img src="./images/Picture5.jpg" width="350">
+<img src="./images/Picture5.jpg" width="450">
 
 Benchmark no.5 (specsjeng) takes the most time to complete with 0.7 seconds simulated and has the biggest L1 Data cache miss rate.
 
