@@ -7,7 +7,7 @@
 *Iliana Kogia (10090)*
 
 
-1)
+1) MinorCPU Cache
 
 [system]
 
@@ -32,6 +32,12 @@ assoc=8
 size=2097152=2MB
 
 2)
+
+Integer benchmarks: bzip, mcf, sjeng, hmmer
+
+Float benchmarks: libm
+
+https://www.spec.org/cpu2006/Docs/
 
 | Benchmarks | sim\_seconds | cpi | Dcache miss\_rate | Icache miss\_rate | L2 miss\_rate |
 | --- | --- | --- | --- | --- | --- |
@@ -61,7 +67,7 @@ Benchmark no.3 (speclibm) has the biggest L2 miss rate.
 | 1GHz | 1000 | 1000 |
 | 3GHz | 1000 | 333 |
 
-We observe that the system clock is default and the CPU clock follows the values we give as input flags. If we add another cpu, it will take the value of cpu clock.
+We observe that the system clock is default and includes the memory controller and memory bus, the CPU clock follows the values we give as input flags and sets the cpu core and cache clock. If we add another cpu, it will take the value of cpu cluster clock.
 
 1GHz:
 
@@ -113,7 +119,7 @@ Section 2
 
 L1 = 16-256kB
 
-We simulated the benchmarks with L1 being 32, 64, 80kB, because most of the times L1 size is close to 64kB to reduce the misses and have a higher hit rate with not much cost. We tried a bigger L1\_I size than L1\_D (65kB, 16kB) as the processor is usually sitting idle while an instruction is being fetched but we did not see any impact on the performance.
+We simulated the benchmarks with L1 being 32, 64, 80kB, because most of the times L1 size is close to 64kB to reduce the misses and have a higher hit rate with not much cost. We tried a bigger L1_I size than L1_D (65kB, 16kB) as the processor is usually sitting idle while an instruction is being fetched but we did not see any impact on the performance.
 
 L2 = 256kB-4MB
 
@@ -126,32 +132,6 @@ We simulated the benchmarks with Cache Line Size being 64B and 128B. 64B being t
 Associativity = 1, 2, 4
 
 For L1 we checked associativity of 1(direct mapped) and 2 (2-way associative) as its size is smaller, for L2 we checked 2-way and 4-way associative.
-
-PARAMETER VALUES
-
-|
- | L1D | L1I | L2 | L1I Ass | L1D Ass | L2 Ass | Cache Line Size |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 32kB | 32kB | 512kB | 2 | 2 | 2 | 64 |
-| 2 | 16kB | 64kB | 512kB | 2 | 2 | 2 | 64 |
-| 3 | 16kB | 16kB | 512kB | 2 | 2 | 2 | 64 |
-| 4 | 32kB | 32kB | 256kB | 2 | 2 | 2 | 64 |
-| 5 | 32kB | 32kB | 2MB | 2 | 2 | 2 | 64 |
-| 6 | 16kB | 64kB | 256kB | 2 | 2 | 2 | 64 |
-| 7 | 32kB | 32kB | 512kB | 1 | 1 | 2 | 64 |
-| 8 | 32kB | 32kB | 512kB | 2 | 2 | 4 | 64 |
-| 9 | 32kB | 32kB | 512kB | 1 | 1 | 4 | 64 |
-| 10 | 32kB | 32kB | 512kB | 2 | 2 | 2 | 64 |
-
-Connected Parameters:
-
-L1) 1,2,3
-
-L2) 1,4,5,6
-
-L1,L2 Ass) 7,8,9
-
-Cache line size) 1,10
 
 2)
 
@@ -246,17 +226,39 @@ Sets:
 
 ![](RackMultipart20221214-1-83hik4_html_50048088a3c09ac2.jpg) ![](RackMultipart20221214-1-83hik4_html_dd9bd5c6dcd4ad31.jpg) ![](RackMultipart20221214-1-83hik4_html_11e577a25cf955c7.jpg) ![](RackMultipart20221214-1-83hik4_html_680b6188863f35fa.jpg) ![](RackMultipart20221214-1-83hik4_html_3b74dd4aed5510e8.jpg)
 
+We observe that for the L1 sizes of the set no.1 we get the optimum CPI for all benchmarks except specmcf (for mcf the best is set no.2).
+
+L1_D=32kB, L1_I=32kB
+
 **{1, 4, 5, 6}**
 
 ![](RackMultipart20221214-1-83hik4_html_c46d478356da3184.jpg) ![](RackMultipart20221214-1-83hik4_html_e02190a0331bc2b9.jpg) ![](RackMultipart20221214-1-83hik4_html_b02633f4c11ee3db.jpg) ![](RackMultipart20221214-1-83hik4_html_81e1bb458d1ec84d.jpg) ![](RackMultipart20221214-1-83hik4_html_f2687db797d5286.jpg)
+
+We observe that for the L2 sizes of the set no.5 we get the optimum CPI for all benchmarks except specmcf.
+
+L2=2MB.
 
 **{7, 8, 9}**
 
 ![](RackMultipart20221214-1-83hik4_html_ad1da6880784d135.jpg) ![](RackMultipart20221214-1-83hik4_html_71974c63fcead596.jpg) ![](RackMultipart20221214-1-83hik4_html_540db393919f4636.jpg) ![](RackMultipart20221214-1-83hik4_html_27d2e505838c9eee.jpg) ![](RackMultipart20221214-1-83hik4_html_935d464a091efbde.jpg)
 
+We observe that for the L1_Ass and L2_Ass of the set no.8 we get the optimum CPI for all benchmarks.
+
+L1_D_Ass=2
+
+L1_I_Ass=2
+
+L2_Ass=4
+
 **{1, 10}**
 
 ![](RackMultipart20221214-1-83hik4_html_b4c3b7b82cb6c326.jpg) ![](RackMultipart20221214-1-83hik4_html_d65ab3eb785aa67e.jpg) ![](RackMultipart20221214-1-83hik4_html_80666aa07cc2369f.jpg) ![](RackMultipart20221214-1-83hik4_html_bcf2ce046cf6cc26.jpg) ![](RackMultipart20221214-1-83hik4_html_b4e4414d9b4ba4f2.jpg)
+
+We observe that for the Cache line sizes of the set no.10 we get the optimum CPI for all benchmarks except specmcf.
+
+Cache_Line_Size = 128
+
+For benchmark MCF we mostly get the best performance for different values but we chose the optimal values for all the benchmarks.
 
 Max Performance:
 
@@ -288,7 +290,7 @@ Section 3
 
 c1 = cost unit.
 
-Cost = c1\* L1\_size + (c1/10^2)\* L2\_size + 2\* c1 \* L1\_ass/16 + c1 \* L2\_ass/16
+**Cost = c1\* L1\_size + (c1/10^2)\* L2\_size + 2\* c1 \* L1\_ass/16 + c1 \* L2\_ass/16**
 
 The cost of L1 must be larger than the cost of L2.
 
