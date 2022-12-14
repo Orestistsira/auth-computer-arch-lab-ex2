@@ -233,9 +233,9 @@ Sets:
 
 **{1, 2, 3}**
 
-<img src="./images/Picture6.jpg" width="450"> <img src="./images/Picture7.jpg" width="450">
-<img src="./images/Picture8.jpg" width="450"> <img src="./images/Picture9.jpg" width="450">
-<img src="./images/Picture10.jpg" width="450">
+<img src="./images/Picture6.jpg" width="400" height="330"> <img src="./images/Picture7.jpg" width="400" height="330">
+<img src="./images/Picture8.jpg" width="400" height="330"> <img src="./images/Picture9.jpg" width="400" height="330">
+<img src="./images/Picture10.jpg" width="400" height="330">
 
 We observe that for the L1 sizes of the set no.1 we get the optimum CPI for all benchmarks except specmcf (for mcf the best is set no.2).
 
@@ -243,9 +243,9 @@ L1_D=32kB, L1_I=32kB
 
 **{1, 4, 5, 6}**
 
-<img src="./images/Picture11.jpg" width="450"> <img src="./images/Picture12.jpg" width="450">
-<img src="./images/Picture13.jpg" width="450"> <img src="./images/Picture14.jpg" width="450">
-<img src="./images/Picture15.jpg" width="450">
+<img src="./images/Picture11.jpg" width="400" height="330"> <img src="./images/Picture12.jpg" width="400" height="330">
+<img src="./images/Picture13.jpg" width="400" height="330"> <img src="./images/Picture14.jpg" width="400" height="330">
+<img src="./images/Picture15.jpg" width="400" height="330">
 
 We observe that for the L2 sizes of the set no.5 we get the optimum CPI for all benchmarks except specmcf.
 
@@ -253,9 +253,9 @@ L2=2MB.
 
 **{7, 8, 9}**
 
-<img src="./images/Picture16.jpg" width="450"> <img src="./images/Picture17.jpg" width="450">
-<img src="./images/Picture18.jpg" width="450"> <img src="./images/Picture19.jpg" width="450">
-<img src="./images/Picture20.jpg" width="450">
+<img src="./images/Picture16.jpg" width="400" height="330"> <img src="./images/Picture17.jpg" width="400" height="330">
+<img src="./images/Picture18.jpg" width="400" height="330"> <img src="./images/Picture19.jpg" width="400" height="330">
+<img src="./images/Picture20.jpg" width="400" height="330">
 
 We observe that for the L1_Ass and L2_Ass of the set no.8 we get the optimum CPI for all benchmarks.
 
@@ -267,9 +267,9 @@ L2_Ass=4
 
 **{1, 10}**
 
-<img src="./images/Picture21.jpg" width="450"> <img src="./images/Picture22.jpg" width="450">
-<img src="./images/Picture23.jpg" width="450"> <img src="./images/Picture24.jpg" width="450">
-<img src="./images/Picture25.jpg" width="450">
+<img src="./images/Picture21.jpg" width="400" height="330"> <img src="./images/Picture22.jpg" width="400" height="330">
+<img src="./images/Picture23.jpg" width="400" height="330"> <img src="./images/Picture24.jpg" width="400" height="330">
+<img src="./images/Picture25.jpg" width="400" height="330">
 
 We observe that for the Cache line sizes of the set no.10 we get the optimum CPI for all benchmarks except specmcf.
 
