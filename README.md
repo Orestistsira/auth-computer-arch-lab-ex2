@@ -323,8 +323,9 @@ a)L1 = 64kB, L2 = 512kB, Ass = 2,2,4
 
 b)L1 = 64kB, L2 = 2MB, Ass = 2,2,4
 
-a) Cost a = 64*c1 + 5,12*c1 + 0.25*c1 + 0.25*c1 +8*c1 = 77.62*c1
-b) Cost b = 64*c1 + 20*c1 + 0.5*c1 + 16*c1 = 100*c1
+a) Cost a = 64xc1 + 5,12xc1 + 0.25xc1 + 0.25xc1 +8xc1 = 77.62xc1
+
+b) Cost b = 64xc1 + 20xc1 + 0.5xc1 + 16xc1 = 100xc1
 
 The small difference in efficiency of L2 = 2MB and Cache_Line_size = 128 is not worth such a bigger
 cost we will have to pay to implement our system. So we think it will be best to consider an L2 =
