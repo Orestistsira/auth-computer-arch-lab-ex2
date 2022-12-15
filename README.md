@@ -277,6 +277,10 @@ Cache_Line_Size = 128
 
 For benchmark MCF we mostly get the best performance for different values but we chose the optimal values for all the benchmarks.
 
+---
+
+---
+
 Max Performance:
 
 L1\_Data = 32kB
@@ -292,6 +296,10 @@ L1\_I\_Ass = 2
 L2\_Ass = 4
 
 Cache\_line\_size = 128
+
+---
+
+---
 
 | Benchmarks | sim\_seconds | cpi | Dcache miss\_rate | Icache miss\_rate | L2 miss\_rate |
 | --- | --- | --- | --- | --- | --- |
@@ -330,3 +338,27 @@ b) Cost b = 64xc1 + 20xc1 + 0.5xc1 + 16xc1 = 100xc1
 The small difference in efficiency of L2 = 2MB and Cache_Line_size = 128 is not worth such a bigger
 cost we will have to pay to implement our system. So we think it will be best to consider an L2 =
 512kB and Cache_Line_Size of 64 to allow both efficiency and price availability.
+
+---
+
+---
+
+Best for Performance and Cost:
+
+L1\_Data = 32kB
+
+L1\_Instruction = 32kB
+
+L2 = 512kB
+
+L1\_D\_Ass = 2
+
+L1\_I\_Ass = 2
+
+L2\_Ass = 4
+
+Cache\_line\_size = 64
+
+---
+
+---
