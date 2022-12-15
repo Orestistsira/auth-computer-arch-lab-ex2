@@ -311,7 +311,7 @@ Section 3
 
 c1 = cost unit.
 
-**Cost = c1\* L1\_size + (c1/10^2)\* L2\_size + 2\* c1 \* L1\_ass/16 + c1 \* L2\_ass/16**
+**Cost = c1 x L1_size + (c1/10^2) x L2_size + 2 x c1 x L1_ass/16 + c1 x L2_ass/16 + c1 x Cache_L_S/8**
 
 The cost of L1 must be larger than the cost of L2.
 
@@ -323,7 +323,9 @@ a)L1 = 64kB, L2 = 512kB, Ass = 2,2,4
 
 b)L1 = 64kB, L2 = 2MB, Ass = 2,2,4
 
-1. Cost a = 64\*c1 + 5,12\*c1 + 0.25\*c1 + 0.25\*c1 = 69.62\*c1
-2. Cost b = 64\*c1 + 20\*c1 + 0.5\*c1 = 84\*c1
+a) Cost a = 64*c1 + 5,12*c1 + 0.25*c1 + 0.25*c1 +8*c1 = 77.62*c1
+b) Cost b = 64*c1 + 20*c1 + 0.5*c1 + 16*c1 = 100*c1
 
-The small difference in efficiency of L2 = 2MB is not worth such a bigger cost we will have to pay to implement our system. So we think it will be best to consider an L2 = 512kB to allow both efficiency and price availability.
+The small difference in efficiency of L2 = 2MB and Cache_Line_size = 128 is not worth such a bigger
+cost we will have to pay to implement our system. So we think it will be best to consider an L2 =
+512kB and Cache_Line_Size of 64 to allow both efficiency and price availability.
