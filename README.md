@@ -208,7 +208,7 @@ For L1 we checked associativity of 1(direct mapped) and 2 (2-way associative) as
 | specsjeng\_9 | 0.706138 | 7.061376 | 0.122441 | 0.000022 | 0.990071 |
 | specsjeng\_10 | 0.497656 | 4.976564 | 0.060926 | 0.000015 | 0.999687 |
 
-We create 10 different parameter sets where we change some values and let the others constant, so we can compare CPI.
+We created 10 different parameter sets where we change some values and let the others constant, so we can compare CPI.
 
 Sets:
 
