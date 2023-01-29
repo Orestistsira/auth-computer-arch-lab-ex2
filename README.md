@@ -42,7 +42,6 @@ Integer benchmarks: bzip, mcf, sjeng, hmmer
 
 Float benchmarks: libm
 
-https://www.spec.org/cpu2006/Docs/
 
 | Benchmarks | sim\_seconds | cpi | Dcache miss\_rate | Icache miss\_rate | L2 miss\_rate |
 | --- | --- | --- | --- | --- | --- |
@@ -360,6 +359,10 @@ L2\_Ass = 4
 Cache\_line\_size = 64
 
 ---
+
+Referances:
+
+[https://www.spec.org/cpu2006/Docs/](https://www.spec.org/cpu2006/Docs/)
 
 ---
 
