@@ -75,8 +75,6 @@ Benchmark no.3 (speclibm) has the biggest L2 miss rate.
 
 We observe that the system clock is default and includes the memory controller and memory bus, the CPU clock follows the values we give as input flags and sets the cpu core and cache clock. If we add another cpu, it will take the value of cpu cluster clock.
 
-**Perfect Scaling**
-
 1GHz:
 
 | Benchmarks | sim\_seconds | cpi | Dcache miss\_rate | Icache miss\_rate | L2 miss\_rate |
@@ -96,6 +94,8 @@ We observe that the system clock is default and includes the memory controller a
 | spechmmer\_3GHz | 0.039646 | 1.190581 | 0.001637 | 0.000221 | 0.077761 |
 | specsjeng\_3GHz | 0.449821 | 13.508136 | 0.121831 | 0.000020 | 0.999972 |
 | speclibm\_3GHz | 0.146433 | 4.397377 | 0.060972 | 0.000094 | 0.999944 |
+
+**Perfect Scaling**
 
 4)
 
