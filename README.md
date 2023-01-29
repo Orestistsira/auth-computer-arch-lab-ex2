@@ -97,6 +97,8 @@ We observe that the system clock is default and includes the memory controller a
 
 **Perfect Scaling**
 
+We observe that the total execution times scale almost pefectly perfectly on the first three benchmarks, as the simulation is three times faster when we triple the CPU frequency. On the other hand, for the last two benchmarks we are certain there is no perfect scaling, as the simulations are not even close to three times faster. We beleive that the reason for the last two benchmarks not following the perfect scaling of the other benchmarks is the L2 Cache miss rate. As stated in the tables above, the last two benchmarks have L2 miss rate almost equal to one, which means that almost every time the L2 cache is accesed, a miss occurs and the CPU waits for RAM to get the data. This RAM penalty has to be paid every time and is independent of any changes on the CPU clock rate. So the performance is not as fast as we would expect.
+
 4)
 
 DDR3\_1600\_x64
@@ -367,6 +369,8 @@ Cache\_line\_size = 64
 Referances:
 
 [https://www.spec.org/cpu2006/Docs/](https://www.spec.org/cpu2006/Docs/)
+
+[https://www.gem5.org/](https://www.gem5.org/)
 
 ---
 
